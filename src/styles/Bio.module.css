@@ -1,0 +1,19 @@
+.main{
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.main p{
+  text-align: justify;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.main h1{
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
