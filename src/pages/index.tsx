@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Inter } from '@next/font/google'
 import { useRouter } from 'next/router'
+// import favicon from '/public/icons8-circled-s-96.ico'
 
 const inter = Inter({ subsets: ['latin'] })
 
