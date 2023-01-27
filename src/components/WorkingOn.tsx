@@ -10,7 +10,7 @@ export const WorkingOn = ({ route }: any) => {
   return (
     <div
       style={{
-        height: '85vh',
+        height: '80vh',
         width: '100vw',
         display: 'flex',
         alignItems: 'center',

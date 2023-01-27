@@ -132,8 +132,8 @@ box-shadow: -9px -9px 0px -200px rgba(0,0,0,0.75);
 
   .grid {
     grid-template-columns: 1fr;
-    padding-bottom:50px;
-    padding-top:40px;
+    padding-bottom:10px;
+    padding-top:20px;
     max-width: 320px;
     width: 50%;
     justify-content: center;
@@ -262,7 +262,8 @@ box-shadow: -9px -9px 18px -16px rgba(0,0,0,0.75);
   padding-top: 10px;
   border-bottom: 1px solid rgb(255, 255, 255);
   font-family: 'Prata',serif;
-  margin-bottom: auto;
+  position: absolute;
+  top: 0;
 }
 
 .quoteContainerQuote{
@@ -279,7 +280,7 @@ box-shadow: -9px -9px 18px -16px rgba(0,0,0,0.75);
   max-width: 60%;
   font-family: 'Prata',serif;
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   font-size: 25px;
   text-align: center;
 }
