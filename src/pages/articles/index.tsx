@@ -1,18 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
+import image1 from '@/images/image-1.jpg'
+import { WorkingOn } from '@/components/WorkingOn'
+import { useRouter } from 'next/router'
 
-const index = () => {
-  return (
-    <div>
-      <Image
-        src="/public/image-3.png"
-        alt="Image-construction"
-        width={100}
-        height={100}
-      />
-      {/* <img src="/public/undraw_building_websites_i78t.png" /> */}
-    </div>
-  )
+const Index = () => {
+  const routeNext = useRouter()
+  return <WorkingOn route={routeNext.pathname} />
 }
 
-export default index
+export default Index

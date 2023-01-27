@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { getAllFilesMetadata } from '@/lib/mdx'
-import { Home, PostsProps } from './Home'
+import Home, { PostsProps } from './Home'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Inter } from '@next/font/google'
