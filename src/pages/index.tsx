@@ -9,8 +9,7 @@ import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Index({ posts }: any) {
-  console.log('props', posts)
+export default function Index() {
   const route = useRouter()
   return (
     <>
@@ -20,17 +19,9 @@ export default function Index({ posts }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home posts={posts} />
+      <Home />
     </>
   )
 }
 
-export const getStaticProps = async () => {
-  const posts: PostsProps[] = await getAllFilesMetadata()
 
-  console.log(posts)
-
-  return {
-    props: { posts },
-  }
-}

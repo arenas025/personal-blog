@@ -28,12 +28,12 @@ export const Header = () => {
       observer.observe(headerRef.current)
   }, [HeaderVisible])
   return (
-    <>
+    <div style={{ position: 'relative', zIndex: 4 }}>
       <div
         ref={headerRef}
         style={{
           position: 'relative',
-          zIndex: 2,
+          zIndex: 3,
           height: '50px',
           width: '10px',
           background: 'transparent',
@@ -61,7 +61,7 @@ export const Header = () => {
         </Link>
         <Spacer />
         {routes.map((route) => (
-          <Link href={route.route} key={route.name}>
+          <Link href={`/${route.route}`} key={route.name}>
             <Box
               color={
                 `/${route.route}` === routeNext.pathname ? 'white' : '#9f9f9f'
@@ -86,6 +86,6 @@ export const Header = () => {
           </Link>
         ))}
       </Flex>
-    </>
+    </div>
   )
 }

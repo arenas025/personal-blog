@@ -44,7 +44,7 @@ export const routes: RouteProps[] = [
   },
 ]
 
-const Home = ({ posts }: any) => {
+const Home = () => {
   const quotes: QuoteProps[] = [
     {
       author: 'Michelangelo',
