@@ -5,8 +5,12 @@ import { WorkingOn } from '@/components/WorkingOn'
 import { useRouter } from 'next/router'
 import { PostsProps, routes } from '../Home'
 import { getAllFilesMetadata } from '@/lib/mdx'
-import image from '/public/images/image-1.jpg'
-import image2 from '/public/images/descarga.png'
+import doIt from '/public/articlesCover/do-it-no-matter.png'
+import dolor from '/public/articlesCover/dolor.png'
+import comfort from '/public/articlesCover/comfort.png'
+import cumpleanos from '/public/articlesCover/cumpleanos.png'
+import preguntas from '/public/articlesCover/preguntas.png'
+import opinion from '/public/articlesCover/opinion.png'
 import {
   Card,
   CardBody,
@@ -16,7 +20,6 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react'
-import { BiRightArrowAlt } from 'react-icons/bi'
 import Link from 'next/link'
 
 interface articleMetadata {
@@ -30,12 +33,28 @@ interface articleMetadata {
 
 const imagesList = [
   {
-    element: image,
-    route: '/public/images/image-1.jpg',
+    element: doIt,
+    route: '/public/articlesCover/do-it-no-matter.png',
   },
   {
-    element: image2,
-    route: '/public/images/descarga.jpg',
+    element: dolor,
+    route: '/public/articlesCover/dolor.png',
+  },
+  {
+    element: comfort,
+    route: '/public/articlesCover/comfort.png',
+  },
+  {
+    element: cumpleanos,
+    route: '/public/articlesCover/cumpleanos.png',
+  },
+  {
+    element: preguntas,
+    route: '/public/articlesCover/preguntas.png',
+  },
+  {
+    element: opinion,
+    route: '/public/articlesCover/opinion.png',
   },
 ]
 
@@ -101,8 +120,7 @@ const Index = ({ posts }: any) => {
                       src={
                         imagesList.filter(
                           (photo) => photo.route === item.image,
-                        )[0].element
-                      }
+                        )[0].element }
                       alt="Cover image"
                     />
                     {/* <div style={{ display: 'flex', marginTop: '5px' }}>
@@ -160,6 +178,8 @@ export default Index
 
 export const getStaticProps = async () => {
   const posts: PostsProps[] = await getAllFilesMetadata()
+
+
 
   return {
     props: { posts },
