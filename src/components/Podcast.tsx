@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const Podcast = () => {
+export const Podcast = ({slug}:any) => {
   return (
     <iframe
       style={{ borderRadius: '12px' }}
-      src="https://open.spotify.com/embed/track/0UtnpKaReKUg2GquaSxCyD?utm_source=generator"
+      src={`https://open.spotify.com/embed/track/${slug}?utm_source=generator`}
       width="100%"
       height="352"
       // frameBorder="0"
@@ -14,3 +14,6 @@ export const Podcast = () => {
     ></iframe>
   )
 }
+
+
+;

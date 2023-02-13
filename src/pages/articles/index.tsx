@@ -11,6 +11,7 @@ import comfort from '/public/articlesCover/comfort.png'
 import cumpleanos from '/public/articlesCover/cumpleanos.png'
 import preguntas from '/public/articlesCover/preguntas.png'
 import opinion from '/public/articlesCover/opinion.png'
+import prohibido from '/public/articlesCover/prohibido.png'
 import {
   Card,
   CardBody,
@@ -55,6 +56,10 @@ const imagesList = [
   {
     element: opinion,
     route: '/public/articlesCover/opinion.png',
+  },
+  {
+    element:prohibido,
+    route: '/public/articlesCover/prohibido.png',
   },
 ]
 
