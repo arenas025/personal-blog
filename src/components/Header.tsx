@@ -6,27 +6,46 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { routes } from '@/pages/Home'
 import { relative } from 'path'
+import { ProgressBar } from './ProgressBar'
 
 export const Header = () => {
   const routeNext = useRouter()
 
   const [HeaderVisible, setHeaderVisible] = useState<boolean>(true)
+  const [scrollValue, setScrollValue] = useState<number>(0)
 
   const headerRef = useRef<any>()
+
+  useEffect(()=>{
+      window.onscroll = function () {
+        setScrollValue(
+          (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+            100,
+        )
+      }
+  })
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setHeaderVisible(entry.isIntersecting)
-        console.log()
+        // console.log(entry)
       },
       {
         threshold: 0.2,
       },
     )
-    console.log('HeaderVisible', HeaderVisible),
+    // window.onscroll!(()=>{
+    // console.log('window.scrollY', window.scrollY, document.body.scrollHeight,window.innerHeight,100)
+    // }))
+
       observer.observe(headerRef.current)
   }, [HeaderVisible])
+
+
+
+
+  console.log(scrollValue)
   return (
     <div style={{ position: 'relative', zIndex: 4 }}>
       <div
@@ -86,6 +105,9 @@ export const Header = () => {
           </Link>
         ))}
       </Flex>
+      {routeNext.pathname === '/articles/[slug]' && (
+        <ProgressBar value={scrollValue} />
+      )}
     </div>
   )
 }
