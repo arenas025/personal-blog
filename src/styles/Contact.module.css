@@ -1,0 +1,25 @@
+.container{
+  background-color: black;
+  border-radius: 10px;
+  width: 90%;
+  padding: 50px;
+}
+
+.pContainer{
+  margin-bottom: 20px
+}
+
+@Media(min-width:600px){
+  .container{
+  background-color: black;
+  display: flex;
+  border-radius: 10px;
+  width: 70%;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+} 
+  .pContainer{
+    margin-bottom: 0px
+  }
+}

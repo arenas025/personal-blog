@@ -29,23 +29,17 @@ export const Header = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setHeaderVisible(entry.isIntersecting)
-        // console.log(entry)
       },
       {
         threshold: 0.2,
       },
     )
-    // window.onscroll!(()=>{
-    // console.log('window.scrollY', window.scrollY, document.body.scrollHeight,window.innerHeight,100)
-    // }))
-
       observer.observe(headerRef.current)
   }, [HeaderVisible])
 
 
 
 
-  console.log(scrollValue)
   return (
     <div style={{ position: 'relative', zIndex: 4 }}>
       <div

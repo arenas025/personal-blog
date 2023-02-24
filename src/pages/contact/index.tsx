@@ -1,12 +1,10 @@
-import { WorkingOn } from '@/components/WorkingOn'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React from 'react'
 import {
   AiOutlineInstagram,
-  AiFillInstagram,
   AiFillGithub,
 } from 'react-icons/ai'
+import style from '../../styles/Contact.module.css'
 
 const Contact = () => {
   return (
@@ -22,15 +20,8 @@ const Contact = () => {
         justifyContent: 'center',
       }}
     >
-      <div
-        style={{
-          background: 'black',
-          borderRadius: '10px',
-          width: '90%',
-          padding: '50px',
-        }}
-      >
-        <p style={{ marginBottom: '20px' }}>
+      <div className={style.container}>
+        <p className={style.pContainer}>
           Acá te dejo otros lugares en los que puedes conoocer un poco más de mi
         </p>
         <div
@@ -51,7 +42,6 @@ const Contact = () => {
             <AiOutlineInstagram size={'100px'} fill="white" />
           </Link>
           <Link
-          
             href={'https://github.com/arenas025'}
             style={{
               display: 'flex',
