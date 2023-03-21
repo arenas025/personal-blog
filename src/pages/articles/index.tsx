@@ -13,6 +13,7 @@ import preguntas from '/public/articlesCover/preguntas.png'
 import opinion from '/public/articlesCover/opinion.png'
 import prohibido from '/public/articlesCover/prohibido.png'
 import music from '/public/articlesCover/musica.png'
+import viajar from '/public/articlesCover/viajar.png'
 import {
   Card,
   CardBody,
@@ -66,6 +67,10 @@ const imagesList = [
   {
     element: music,
     route: '/public/articlesCover/musica.png',
+  },
+  {
+    element: viajar,
+    route: '/public/articlesCover/viajar.png',
   },
 ]
 
