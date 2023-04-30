@@ -18,7 +18,7 @@ export const ShareWith = ({ slug }: ShareWithProps) => {
       }}
     >
       <p style={{ textAlign: 'center', fontFamily: 'Prata', color: 'white' }}>
-        Si te gustó este artículo, puedes compartirlo
+        Si te gustó este escrito, puedes compartirlo
       </p>
       <div
         style={{
