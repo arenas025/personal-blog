@@ -15,6 +15,8 @@ import prohibido from '/public/articlesCover/prohibido.png'
 import music from '/public/articlesCover/musica.png'
 import viajar from '/public/articlesCover/viajar.png'
 import huimos from '/public/articlesCover/huimos.png'
+import carta1 from '/public/articlesCover/letter-1.png'
+
 
 
 import {
@@ -79,6 +81,9 @@ const imagesList = [
     element: huimos,
     route: '/public/articlesCover/huimos.png',
   },
+  {element:carta1,
+    route: '/public/articlesCover/letter-1.png',
+  }
 ]
 
 const Index = ({ posts }: any) => {

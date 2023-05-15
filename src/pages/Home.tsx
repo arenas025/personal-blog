@@ -28,7 +28,7 @@ interface RouteProps {
 
 export const routes: RouteProps[] = [
   {
-    name: 'Artículos',
+    name: 'Escritos',
     route: 'articles',
     icon: MdOutlineArticle,
   },
