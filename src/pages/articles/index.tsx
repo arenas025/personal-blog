@@ -83,6 +83,9 @@ const imagesList = [
   },
   {element:carta1,
     route: '/public/articlesCover/letter-1.png',
+  },
+   {element:carta1,
+    route: '/public/articlesCover/letter-1.png',
   }
 ]
 
