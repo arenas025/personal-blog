@@ -16,6 +16,7 @@ import music from '/public/articlesCover/musica.png'
 import viajar from '/public/articlesCover/viajar.png'
 import huimos from '/public/articlesCover/huimos.png'
 import carta1 from '/public/articlesCover/letter-1.png'
+import perdida from '/public/articlesCover/perder-alguien.png'
 
 
 
@@ -84,8 +85,8 @@ const imagesList = [
   {element:carta1,
     route: '/public/articlesCover/letter-1.png',
   },
-   {element:carta1,
-    route: '/public/articlesCover/letter-1.png',
+  {element:perdida,
+    route: '/public/articlesCover/perder-alguien.png',
   }
 ]
 
